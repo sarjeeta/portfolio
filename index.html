@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarjeeta - Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script defer src="script.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+  </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            CVs
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" onclick="downloadCV('sde')">SDE Profile CV</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="downloadCV('data')">Data Analyst Profile</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="downloadCV('core')">Core CV (Mechanical)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Account
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://www.instagram.com/imsarjeeta/" target="_blank"><i class="fab fa-instagram me-2"></i>imsarjeeta</a></li>
+                            <li><a class="dropdown-item" href="https://www.linkedin.com/in/sarjeetabayla16/" target="_blank"><i class="fab fa-linkedin me-2"></i>sarjeetabayla16</a></li>
+                            <li><a class="dropdown-item" href="https://discord.gg/4e6GNbuk" target="_blank"><i class="fab fa-discord me-2"></i>sarjeeta#0160</a></li>
+                            <li><a class="dropdown-item" href="https://github.com/sarjeeta" target="_blank"><i class="fab fa-github me-2"></i>tintin26</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title fade-in-up">Hi, I'm Sarjeeta</h1>
+                        <p class="hero-subtitle fade-in-up">B.Tech Mechanical Engineering Student at IIT Guwahati</p>
+                        <p class="mb-4 fade-in-up">Passionate about web development, data science, and creating innovative solutions through technology.</p>
+                        <div class="fade-in-up">
+                            <a href="#contact" class="btn btn-outline-light">Send Message</a>
+                            <a href="#projects" class="btn btn-outline-light">View Projects</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center mt-4 mt-lg-0">
+                <div class="hero-image fade-in-up">
+                    <img src="profile.jpeg" alt="Sarjeeta's Photo" class="img-fluid " style="max-width: 300px; border: 5px solid white;">
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title fade-in-up">My Skills</h2>
+            <div class="row g-4">
+                <div class="col-md-4 col-sm-6">
+                    <div class="skill-card fade-in-up">
+                        <div class="skill-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h5>Python</h5>
+                        <p>Data Science, Machine Learning, and Backend Development</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="skill-card fade-in-up">
+                        <div class="skill-icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <h5>JavaScript</h5>
+                        <p>Frontend Development and Interactive Web Applications</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="skill-card fade-in-up">
+                        <div class="skill-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h5>React.js</h5>
+                        <p>Modern Frontend Framework for Dynamic UIs</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="skill-card fade-in-up">
+                        <div class="skill-icon">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <h5>Node.js</h5>
+                        <p>Server-side JavaScript Runtime Environment</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="skill-card fade-in-up">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h5>MySQL</h5>
+                        <p>Database Management and Query Optimization</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="skill-card fade-in-up">
+                        <div class="skill-icon">
+                            <i class="fab fa-figma"></i>
+                        </div>
+                        <h5>Figma</h5>
+                        <p>UI/UX Design and Prototyping</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title fade-in-up">My Projects</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card fade-in-up">
+                        <div class="project-image">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <div class="p-4">
+                            <h5>Airline Management System</h5>
+                            <p class="text-muted mb-3">May 2024 - June 2024</p>
+                            <p>Full-stack web application using MERN stack with flight booking, user management, and admin panel features.</p>
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                    See Details
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://github.com/sarjeeta/flight-management" target="_blank"><i class="fab fa-github me-2"></i>GitHub</a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"><i class="fas fa-external-link-alt me-2"></i>Landing Page</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card fade-in-up">
+                        <div class="project-image">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <div class="p-4">
+                            <h5>Artifex AI</h5>
+                            <p class="text-muted mb-3">June 2024</p>
+                            <p>AI image-generating web app using MERN stack with OpenAI's DALL-E model and Cloudinary integration.</p>
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                    See Details
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://github.com/sarjeeta" target="_blank"><i class="fab fa-github me-2"></i>GitHub</a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"><i class="fas fa-external-link-alt me-2"></i>Landing Page</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card fade-in-up">
+                        <div class="project-image">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                        <div class="p-4">
+                            <h5>Weather Dashboard</h5>
+                            <p class="text-muted mb-3">July 2023</p>
+                            <p>Real-time weather application with location-based updates using OpenWeatherMap API.</p>
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                    See Details
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://github.com/sarjeeta" target="_blank"><i class="fab fa-github me-2"></i>GitHub</a></li>
+                                    <li><a class="dropdown-item" href="#" target="_blank"><i class="fas fa-external-link-alt me-2"></i>Landing Page</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+        <div class="container">
+            <h2 class="section-title fade-in-up">My Resume</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4 class="mb-4 fade-in-up">Education</h4>
+                    <div class="timeline fade-in-up">
+                        <div class="timeline-item">
+                            <h5>B.Tech - Mechanical Engineering</h5>
+                            <p class="text-primary mb-2">Indian Institute of Technology, Guwahati</p>
+                            <p class="text-muted mb-2">2022 - Present</p>
+                            <p class="mb-0">CGPA: 6.29</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>Senior Secondary (12th)</h5>
+                            <p class="text-primary mb-2">CBSE Board</p>
+                            <p class="text-muted mb-2">2021</p>
+                            <p class="mb-0">Percentage: 91.2%</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>Secondary (10th)</h5>
+                            <p class="text-primary mb-2">CBSE Board</p>
+                            <p class="text-muted mb-2">2019</p>
+                            <p class="mb-0">Percentage: 91.2%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h4 class="mb-4 fade-in-up">Experience & Achievements</h4>
+                    <div class="timeline fade-in-up">
+                        <div class="timeline-item">
+                            <h5>Associate Welfare Secretary</h5>
+                            <p class="text-primary mb-2">Subansiri Girls Hostel, IIT Guwahati</p>
+                            <p class="text-muted mb-2">April 2024 - Present</p>
+                            <p class="mb-0">Managing welfare activities for 600+ hostel boarders</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>JEE 2022 Achievement</h5>
+                            <p class="text-primary mb-2">Top 1.2% nationwide</p>
+                            <p class="text-muted mb-2">2022</p>
+                            <p class="mb-0">Successfully cleared among 0.94M candidates</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>Sports Achievements</h5>
+                            <p class="text-primary mb-2">Volleyball Team Member</p>
+                            <p class="text-muted mb-2">2022 - Present</p>
+                            <p class="mb-0">Gold in Spirit 2023, Silver medals in multiple tournaments</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title text-white fade-in-up">Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-4 text-center fade-in-up">
+                            <div class="mb-3">
+                                <i class="fas fa-envelope fa-2x text-primary"></i>
+                            </div>
+                            <h6>Email</h6>
+                            <p class="text-light">sarjeeta16@gmail.com</p>
+                        </div>
+                        <div class="col-md-4 text-center fade-in-up">
+                            <div class="mb-3">
+                                <i class="fas fa-phone fa-2x text-primary"></i>
+                            </div>
+                            <h6>Phone</h6>
+                            <p class="text-light">+91-9079318662</p>
+                        </div>
+                        <div class="col-md-4 text-center fade-in-up">
+                            <div class="mb-3">
+                                <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
+                            </div>
+                            <h6>Location</h6>
+                            <p class="text-light">IIT Guwahati, Assam</p>
+                        </div>
+                    </div>
+                    <form class="fade-in-up" onsubmit="sendMessage(event)">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control" placeholder="Subject" required>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn-primary-custom">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-center text-white">
+        <div class="container">
+            <p>&copy; 2024 Sarjeeta. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+  </script>
+</body>
+</html>
